@@ -1,2 +1,4 @@
 # discordbot-exp
-funny bot or something idk
+
+Python bot for Discord using the Discord API
+### uses 'saami square ' as prefix
