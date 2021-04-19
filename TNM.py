@@ -43,27 +43,6 @@ async def moment(ctx):
 async def villain(ctx):
     await ctx.send("https://tenor.com/view/viswasam-ajith-thala2019pongal-thookku-durai-visvasam-viswasam-viswaasam-ak-thala-gif-13176644")
 
-# @bot.command(brief="Plays a single video, from a youtube URL")
-# async def yt(ctx):
-#     url = ctx.message.content
-#     url = url.strip('song ')
-#     YDL_OPTIONS = {'format': 'bestaudio', 'noplaylist':'True'}
-#     FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
-#     voice_channel = ctx.author.voice.channel
-#     channel = None
-#     channel = voice_channel.name
-#     vc = await voice_channel.connect()
-#     if not vc.is_playing():
-#         with YoutubeDL(YDL_OPTIONS) as ydl:
-#             info = ydl.extract_info(url, download=False)
-#         URL = info['formats'][0]['url']
-#         vc.play(FFmpegPCMAudio(URL, **FFMPEG_OPTIONS, executable="C:/Users/Sriram/Desktop/ffmpeg-4.3.2-2021-02-02-essentials_build/bin/ffmpeg"))
-#         vc.is_playing()
-#     else:
-#         await ctx.send("Already playing song")
-#         return
-
-
 @bot.command(name="paatu")
 async def play(ctx, *, query=None):
     if query:
